@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="find-pet.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <title>Petfinder</title>
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png">   
+    </header>
+<section class="background">
+    <div class="container">
+        <form id="pet-form">
+            <div class="form-div">
+                <label for="animal">Animal</label>
+                <select id="animal">
+                <option style="display:none">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="small&furry">Small & Furry</option>
+                <option value="horse">Horse</option>
+                <option value="bird">Bird</option>
+                <option value="scales,fins&other">Scales, Fins & Other</option>
+                <option value="barnyard">Barnyard</option>
+                </select>
+                <label for="animal-age">Age</label>
+                <select id="animal-age">
+                <option style="display:none">
+                <option value="baby">Baby</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+                <option value="horse">Horse</option>
+                </select>
+                <label for="animal-gender">Gender</label>
+                <select id="animal-gender">
+                <option style="display:none">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                </select>
+                <input type="text" id="zipcode" autocomplete="off" placeholder="Enter your zipcode">
+                <button type="submit" id="btn">FIND</button>
+            </div>
+        </form>
+        <div class="found"></div>
+    </div>
+</section>
+<script type="module" src="find-pet.js"></script>
+</body>
+</html>
